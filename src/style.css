@@ -1,0 +1,45 @@
+:root {
+    font-family: Inter, system-ui, sans-serif;
+    color: #ffffff;
+    background: #000000;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    overflow: hidden;
+    background: #000;
+}
+
+#app {
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.app h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.app p {
+    margin-top: 1rem;
+    opacity: 0.7;
+}
