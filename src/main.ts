@@ -1,14 +1,13 @@
 import './style.css';
+import { App } from './App';
 
-const app = document.querySelector<HTMLDivElement>('#app');
+const appElement =
+    document.querySelector<HTMLDivElement>('#app');
 
-if (!app) {
-    throw new Error('No se encontró el contenedor #app');
+if (!appElement) {
+    throw new Error('No se encontró #app');
 }
 
-app.innerHTML = `
-    <main class="app">
-        <h1>Galaxy Universe</h1>
-        <p>Proyecto base preparado.</p>
-    </main>
-`;
+const app = new App(appElement);
+
+app.start();
